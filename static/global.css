@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-raleway: Raleway;
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+  --font-rubik: Rubik;
+  --font-roboto: Roboto;
+  --font-advent-pro: "Advent Pro";
+  --font-alata: Alata;
+  --font-viga: Viga;
+
+  /* font sizes */
+  --font-size-xs: 12px;
+  --font-size-base: 16px;
+  --font-size-mini: 15px;
+  --font-size-xl: 20px;
+  --font-size-5xl: 24px;
+  --font-size-sm: 14px;
+  --font-size-8xl: 27px;
+  --font-size-4xl: 23px;
+  --font-size-11xl: 30px;
+  --font-size-4xs: 9px;
+  --font-size-smi: 13px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: #fefeff;
+  --color-gray-200: #09051c;
+  --color-whitesmoke: #f4f4f4;
+  --color-black: #000;
+  --color-darkslategray: #3b3b3b;
+  --color-tomato: #ff4b4b;
+
+  /* Gaps */
+  --gap-17xl: 36px;
+  --gap-3xs: 10px;
+  --gap-60xl: 79px;
+  --gap-5xs: 8px;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+  --padding-lg: 18px;
+  --padding-5xl: 24px;
+  --padding-mid: 17px;
+  --padding-4xl: 23px;
+  --padding-mini: 15px;
+  --padding-2xs: 11px;
+  --padding-2xl: 21px;
+
+  /* border radiuses */
+  --br-xl: 20px;
+  --br-mini: 15px;
+  --br-xs: 12px;
+  --br-3xl: 22px;
+  --br-3xs: 10px;
+
+  /* Effects */
+  --drop-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
+}

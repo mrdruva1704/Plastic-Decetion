@@ -1,0 +1,52 @@
+.scanner-scanner-icon {
+  position: relative;
+  width: 286px;
+  height: 235px;
+  object-fit: cover;
+}
+.scan-your-genarating {
+  margin: 0;
+}
+.create-account4,
+.text-scanner {
+  position: relative;
+  line-height: 131.02%;
+  font-weight: 500;
+}
+.create-account4 {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.scanearn,
+.scanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scanearn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-lg) var(--padding-5xl);
+  background-color: transparent;
+  border-radius: var(--br-mini);
+  background: linear-gradient(98.81deg, #53e88b, #15be77);
+  justify-content: center;
+}
+.scanner {
+  position: relative;
+  border-radius: 33px;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  padding: var(--padding-mini) 16px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  gap: 26px;
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-rubik);
+}

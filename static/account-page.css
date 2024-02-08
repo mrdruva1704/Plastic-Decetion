@@ -1,0 +1,262 @@
+.hello-account-page {
+  position: relative;
+  letter-spacing: 0.5px;
+}
+.frame-child {
+  position: relative;
+  border-radius: 50%;
+  width: 144px;
+  height: 144px;
+  object-fit: cover;
+}
+.ellipse-parent,
+.user {
+  display: flex;
+  justify-content: flex-start;
+}
+.ellipse-parent {
+  flex-direction: row;
+  align-items: center;
+  gap: 29px;
+}
+.user {
+  border-radius: 16px;
+  background: linear-gradient(98.81deg, #53e88b, #15be77);
+  flex-direction: column;
+  padding: 9px var(--padding-mini);
+  align-items: flex-start;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.contact-us-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xl);
+  background-color: var(--color-white);
+  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  width: 347px;
+  height: 103px;
+}
+.contact-us-account-page {
+  position: absolute;
+  top: calc(50% - 11.5px);
+  left: calc(50% - 61.5px);
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.5px;
+  font-family: var(--font-roboto);
+  color: var(--color-black);
+  text-align: left;
+}
+.contact-us-img-account-page {
+  position: absolute;
+  top: calc(50% - 24.5px);
+  left: 31px;
+  border-radius: var(--br-3xs);
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.contact-us {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 347px;
+  height: 103px;
+}
+.location-img-account-page {
+  position: absolute;
+  top: 27px;
+  left: 31px;
+  border-radius: var(--br-3xs);
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.other-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 19px;
+}
+.menu-bar-account-page-child {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 177.5px);
+  border-radius: var(--br-3xl);
+  background-color: var(--color-white);
+  box-shadow: 0 0 50px rgba(90, 108, 234, 0.1);
+  width: 355px;
+  height: 74px;
+}
+.frame {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 52.5px);
+  border-radius: var(--br-xs);
+  background: linear-gradient(98.81deg, #53e88b, #15be77);
+  width: 105px;
+  height: 44px;
+  opacity: 0.1;
+}
+.iconlybulkhome {
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 35.5px);
+  width: 24px;
+  height: 24px;
+}
+.home {
+  position: absolute;
+  bottom: 12px;
+  left: calc(50% + 0.5px);
+  font-size: var(--font-size-xs);
+  line-height: 131.02%;
+  font-family: var(--font-raleway);
+  color: var(--color-gray-200);
+  text-align: left;
+}
+.icon-home-active {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 15px;
+  left: calc(50% - 157.5px);
+  width: 105px;
+  height: 44px;
+}
+.chat-icon {
+  position: absolute;
+  height: 83.21%;
+  width: 83.33%;
+  top: 8.33%;
+  right: 8.33%;
+  bottom: 8.46%;
+  left: 8.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.iconlybulkchat {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 25px;
+  left: calc(50% + 115.5px);
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+}
+.menu-bar-account-page-item {
+  position: absolute;
+  bottom: 38px;
+  left: calc(50% + 130.5px);
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  object-fit: cover;
+}
+.div {
+  position: absolute;
+  bottom: 37px;
+  left: calc(50% + 69.5px);
+  line-height: 131.02%;
+}
+.iconlybulkbuy {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 14px);
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+}
+.notification-cart-child {
+  position: absolute;
+  bottom: 1px;
+  left: calc(50% - 6.5px);
+  border-radius: 50%;
+  background-color: var(--color-tomato);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+}
+.div1 {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 2.5px);
+  font-size: var(--font-size-4xs);
+  line-height: 131.02%;
+  font-family: var(--font-raleway);
+  color: var(--color-white);
+  text-align: left;
+}
+.icon-cart,
+.notification-cart {
+  position: absolute;
+  bottom: 12px;
+  left: calc(50% + 1px);
+  width: 13px;
+  height: 14px;
+}
+.icon-cart {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  bottom: 25px;
+  left: calc(50% + 46.5px);
+  width: 28px;
+  height: 26px;
+}
+.icon-profile,
+.profile-icon {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 8px);
+  width: 15.99px;
+  height: 20px;
+}
+.icon-profile {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  bottom: 27px;
+  left: calc(50% - 6.5px);
+  opacity: 0.5;
+}
+.menu-bar-account-page {
+  position: relative;
+  width: 355px;
+  height: 74px;
+  text-align: left;
+  font-size: var(--font-size-4xs);
+  color: var(--color-white);
+  font-family: var(--font-raleway);
+}
+.account-page {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}

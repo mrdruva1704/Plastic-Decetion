@@ -1,0 +1,107 @@
+.bin-tech-headding1 {
+  position: relative;
+}
+.main-img-sign-up1 {
+  position: relative;
+  width: 287px;
+  height: 200px;
+  object-fit: cover;
+}
+.login-text {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 131.02%;
+  font-family: var(--font-raleway);
+  color: var(--color-gray-200);
+  text-align: center;
+}
+.email-input,
+.login-input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.email-input {
+  border: 1px solid var(--color-whitesmoke);
+  font-family: var(--font-raleway);
+  font-size: var(--font-size-xl);
+  background-color: var(--color-white);
+  border-radius: var(--br-mini);
+  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  box-sizing: border-box;
+  width: 296px;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-mid) var(--padding-4xl);
+}
+.login-input {
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.create-account5,
+.create-new-account {
+  position: relative;
+  line-height: 131.02%;
+  font-family: var(--font-poppins);
+}
+.create-new-account {
+  text-decoration: none;
+  font-size: var(--font-size-mini);
+  font-weight: 300;
+  color: var(--color-gray-200);
+  text-align: center;
+}
+.create-account5 {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-white);
+  text-align: left;
+}
+.forgot-password-link1,
+.login-button {
+  background: linear-gradient(98.81deg, #53e88b, #15be77);
+}
+.login-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-lg) var(--padding-5xl);
+  background-color: transparent;
+  border-radius: var(--br-mini);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.forgot-password-link1 {
+  text-decoration: underline;
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 166.52%;
+  font-family: var(--font-raleway);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+.login,
+.login-to-your-acc-sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.login-to-your-acc-sign-up {
+  gap: var(--gap-17xl);
+}
+.login {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-raleway);
+}
