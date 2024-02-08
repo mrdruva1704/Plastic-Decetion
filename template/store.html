@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="static/global.css" />
+    <link rel="stylesheet" href="static/store.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Advent Pro:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Viga:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <main class="store">
+      <div class="hedder">
+        <div class="recycleble-items">
+          <p class="recycleble">Recycleble</p>
+          <p class="recycleble">Items</p>
+        </div>
+        <button class="notification">
+          <div class="icon-notification">
+            <div class="rectangle2"></div>
+          </div>
+          <img
+            class="icon-notifiaction"
+            alt=""
+            src="static/public/icon-notifiaction.svg"
+          />
+        </button>
+      </div>
+      <div class="search-column">
+        <input
+          class="search"
+          type="text"
+          placeholder="What do you want to order?"
+        />
+
+        <button class="filter-icon">
+          <div class="rectangle3"></div>
+          <img
+            class="iconlybulkfilter"
+            alt=""
+            src="static/public/iconlybulkfilter.svg"
+          />
+        </button>
+      </div>
+      <form action="/store" method="post">
+      <div class="e-commerce">
+        <div class="e-commerce-1">
+          <button type="submit" value="bottle" name="item">
+          <div class="card">
+            <div class="info">
+              <img class="image-icon1" alt="" src="static\bottle.jpg" />
+
+              <div class="details">Bottle</div>
+              <div class="name">500</div>
+            </div>
+          </div>
+          </button>
+          <button type="submit" value="chair" name="item">
+          <div class="card">
+            <div class="info">
+              <img class="image-icon1" alt="" src="static\chair.jpg" />
+
+              <div class="details">Chairs</div>
+              <div class="name">750</div>
+            </div>
+          </div>
+          </button>
+        </div>
+        <div class="e-commerce-1">
+          <button type="submit" value="cups" name="item">
+          <div class="card">
+            <div class="info">
+              <img class="image-icon1" alt="" src="static\cups.jpg" />
+
+              <div class="details">Cups</div>
+              <div class="name">200</div>
+            </div>
+          </div>
+          </button>
+          <button type="submit" value="pot" name="item">
+          <div class="card">
+            <div class="info">
+              <img class="image-icon1" alt="" src="static\pot.jpg" />
+
+              <div class="details">Hanging pots</div>
+              <div class="name">350</div>
+            </div>
+          </div>
+          </button>
+        </div>
+      </div>
+      </form>
+      <div class="menu-bar-recycleble-items">
+        <div class="menu-bar-recycleble-items-child"></div>
+        <button class="icon-home-active1" id="home">
+          <div class="frame1"></div>
+          <img
+            class="iconlybulkhome1"
+            alt=""
+            src="static/public/iconlybulkhome1.svg"
+          />
+
+          <div class="home1">Home</div>
+        </button>
+        <div class="div2">7</div>
+        <button class="icon-cart1">
+          <img
+            class="iconlybulkbuy1"
+            alt=""
+            src="static/public/iconlybulkbuy1.svg"
+          />
+
+          <div class="notification-cart1">
+            <div class="notification-cart-item"></div>
+            <div class="div3">7</div>
+          </div>
+        </button>
+        <button class="icon-profile1" id="profile">
+          <img class="profile-icon1" alt="" src="static/public/profile1.svg" />
+        </button>
+      </div>
+    </main>
+  </body>
+  <script>
+    var home = document.getElementById("home");
+    if (home) {
+      home.addEventListener("click", function (e) {
+        window.location.href = "./home";
+      });
+    }
+  </script>
+  <script>
+    var profile = document.getElementById("profile");
+    if (profile) {
+      profile.addEventListener("click", function (e) {
+        window.location.href = "./profile";
+      });
+    }
+  </script>
+</html>

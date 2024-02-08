@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="static/global.css" />
+    <link rel="stylesheet" href="static/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Advent Pro:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Viga:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <main class="login">
+      <b class="bin-tech-headding1">BIN-TECH</b>
+      <img
+        class="main-img-sign-up1"
+        alt=""
+        src="static/public/main-img-sign-up@2x.png"
+      />
+
+      <form class="login-to-your-acc-sign-up" method="post" action="/login">
+        <b class="login-text">Login </b>
+        {% if status!=undefined %}
+          <a class="create-new-account" > {{status}} </a>
+        {% endif %}
+        <div class="login-input">
+          <input class="email-input" type="text" placeholder="username" name="uname"/>
+
+          <input class="email-input" type="text" placeholder="Password" name="password"/>
+        </div>
+        <a class="create-new-account" href="static/registration.html"
+          >Create new account</a
+        >
+        <button class="login-button"type='submit'>
+          <div class="create-account5">Login</div>
+        </button>
+        <a class="forgot-password-link1">Forgot Your Password?</a>
+      </form>
+    </main>
+  </body>
+</html>

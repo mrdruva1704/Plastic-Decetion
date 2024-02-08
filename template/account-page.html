@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="static/global.css" />
+    <link rel="stylesheet" href="static/account-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Advent Pro:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Viga:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <main class="account-page">
+      <div class="hello-account-page">Hello,</div>
+      <div class="user">
+        <div class="ellipse-parent">
+          <img class="frame-child" alt="" src="static/public/ellipse-173@2x.png" />
+
+          <div class="hello-account-page">{{username}}</div>
+        </div>
+      </div>
+      <div class="other-details">
+        <button class="contact-us" id="contact">
+          <div class="contact-us-child"></div>
+          <div class="contact-us-account-page">CONTACT US</div>
+          <img
+            class="contact-us-img-account-page"
+            alt=""
+            src="static/public/contactus-imgaccount-page@2x.png"
+          />
+        </button>
+        <button class="contact-us" id="earnings">
+          <div class="contact-us-child"></div>
+          <img
+            class="contact-us-img-account-page"
+            alt=""
+            src="static/public/coins-imgaccount-page@2x.png"
+          />
+
+          <div class="contact-us-account-page">EARNINGS</div>
+        </button>
+        <button class="contact-us" id="location">
+          <div class="contact-us-child"></div>
+          <div class="contact-us-account-page">LOCATION</div>
+          <img
+            class="location-img-account-page"
+            alt=""
+            src="static/public/location-imgaccount-page@2x.png"
+          />
+        </button>
+        <button class="contact-us" id="store">
+          <div class="contact-us-child"></div>
+          <div class="contact-us-account-page">STORE</div>
+          <img
+            class="contact-us-img-account-page"
+            alt=""
+            src="static/public/bag-imgaccount-page@2x.png"
+          />
+        </button>
+      </div>
+      <footer class="menu-bar-account-page">
+        <div class="menu-bar-account-page-child"></div>
+        <button class="icon-home-active" id="home">
+          <div class="frame"></div>
+          <img
+            class="iconlybulkhome"
+            alt=""
+            src="static/public/iconlybulkhome.svg"
+          />
+
+          <div class="home">Home</div>
+        </button>
+        <button class="iconlybulkchat">
+          <img class="chat-icon" alt="" src="static/public/chat.svg" />
+        </button>
+        <img
+          class="menu-bar-account-page-item"
+          alt=""
+          src="static/public/ellipse-164@2x.png"
+        />
+
+        <button class="icon-cart" id="cart">
+          <img class="iconlybulkbuy" alt="" src="static/public/iconlybulkbuy.svg" />
+
+        </button>
+        <button class="icon-profile">
+          <img class="profile-icon" alt="" src="static/public/profile.svg" />
+        </button>
+      </footer>
+    </main>
+  </body>
+  <script>
+    var home = document.getElementById("home");
+    if (home) {
+      home.addEventListener("click", function (e) {
+        window.location.href = "./home";
+      });
+    }
+  </script>
+  <script>
+    var contact = document.getElementById("contact");
+    if (contact) {
+      contact.addEventListener("click", function (e) {
+        window.location.href = "./contact";
+      });
+    }
+  </script>
+  <script>
+    var earnings = document.getElementById("earnings");
+    if (earnings) {
+      earnings.addEventListener("click", function (e) {
+        window.location.href = "./earnings";
+      });
+    }
+  </script>
+  <script>
+    var store = document.getElementById("store");
+    if (store) {
+      store.addEventListener("click", function (e) {
+        window.location.href = "./store";
+      });
+    }
+  </script>
+  <script>
+    var store = document.getElementById("cart");
+    if (store) {
+      store.addEventListener("click", function (e) {
+        window.location.href = "./store";
+      });
+    }
+  </script>
+  
+</html>

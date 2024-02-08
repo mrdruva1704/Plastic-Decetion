@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="static/global.css" />
+    <link rel="stylesheet" href="static/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Advent Pro:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Viga:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <main class="landing">
+      <div class="landing1">
+        <div class="logo">
+          <h1 class="bin-tech">BIN-TECH</h1>
+          <img class="bin-image-icon" alt="" src="static/public/image11@2x.png" />
+        </div>
+        <div class="be-a-part-container">
+          <p class="be-a-part">Be A Part of the solution</p>
+          <p class="be-a-part">Not A Part Of The Pollution</p>
+        </div>
+        <button class="get-started" id="getstarted">
+          <div class="create-account6" >Get Started</div>
+        </button>
+        <button class="get-started" id="scanner">
+          <div class="create-account6" >scan QR</div>
+        </button>
+        <button class="get-started" id="coins">
+          <div class="create-account6" >Coins</div>
+        </button>
+      </div>
+    </main>
+  </body>
+  <script>
+    var getstarted = document.getElementById("getstarted");
+    if (getstarted) {
+      getstarted.addEventListener("click", function (e) {
+        window.location.href = "./profile";
+      });
+    }
+  </script>
+  <script>
+    var scanner = document.getElementById("scanner");
+    if (scanner) {
+      scanner.addEventListener("click", function (e) {
+        window.location.href = "./scanner";
+      });
+    }
+  </script>
+  <script>
+    var coins = document.getElementById("coins");
+    if (coins) {
+      coins.addEventListener("click", function (e) {
+        window.location.href = "./earnings";
+      });
+    }
+  </script>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="static/global.css" />
+    <link rel="stylesheet" href="static/scanner.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Advent Pro:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Viga:wght@400&display=swap"
+    />
+    <script>
+      // Define variables
+      let videoStream;
+      let videoElement;
+      let canvasElement;
+      let context;
+
+      // Function to start the video stream
+      function startVideo() {
+          videoElement = document.getElementById('video');
+          canvasElement = document.createElement('canvas');
+          context = canvasElement.getContext('2d');
+
+          navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+              .then(stream => {
+                  videoStream = stream;
+                  videoElement.srcObject = stream;
+              })
+              .catch(error => console.error('Error accessing camera:', error));
+      }
+
+      // Function to stop the video stream
+      function stopVideo() {
+          if (videoStream) {
+              const tracks = videoStream.getTracks();
+              tracks.forEach(track => track.stop());
+              videoElement.srcObject = null;
+          }
+      }
+
+      // Function to capture a frame and send it to the server
+      function captureFrame() {
+          canvasElement.width = videoElement.videoWidth;
+          canvasElement.height = videoElement.videoHeight;
+          context.drawImage(videoElement, 0, 0, canvasElement.width, canvasElement.height);
+          const image = canvasElement.toDataURL('image/jpeg');
+
+          fetch('/scan', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ image: image })
+          })
+          .then(response => response.json())
+          .then(data => {
+              if (data.qrCodeFound) {
+                  stopVideo();
+                  window.location.href = "./scanner";
+              }
+          })
+          .catch(error => console.error('Error capturing frame:', error));
+      }
+
+      // Function to handle page load
+      function handlePageLoad() {
+          startVideo();
+      }
+
+      // Add event listener for page load
+      window.addEventListener('DOMContentLoaded', handlePageLoad);
+      setInterval(captureFrame,2000)
+    </script>
+    
+  </head>
+  <body>
+    <main class="scanner">
+
+      <video id="video" autoplay></video>
+      <div class="text-scanner">
+        <p class="scan-your-genarating">Scan your generating</p>
+        <p class="scan-your-genarating">QR-Code here</p>
+      </div>
+      
+      {% if status!=undefined %}
+      <div class="text-scanner">
+        <button class="scanearn" id="button">
+          <div class="create-account4">Re-capture</div>
+        </button>
+        <p class="scan-your-genarating"> {{status}} </p>
+      </div>
+      <!-- {% else %}
+        <button class="scanearn" >
+          <div class="create-account4" onclick="captureFrame()" >Capture</div>
+        </button> -->
+      {% endif %}
+    </main>
+  </body>
+</button>
+<script>
+  var button = document.getElementById("button");
+  if (button) {
+    button.addEventListener("click", function (e) {
+      window.location.href = "./scanner";
+    });
+  }
+</script>
+</html>

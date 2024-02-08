@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="static/global.css" />
+    <link rel="stylesheet" href="static/purchase.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Advent Pro:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Viga:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <main class="purchase">
+      <img
+        class="shoes-recycleble-items-detail"
+        alt=""
+        src="static\{{item}}.jpg"
+      />
+
+      <div class="shoes-detail-menu">{{item}}</div>
+      <div class="rattings">
+        <div class="rating-detail-menu">
+          <button class="icon-star">
+            <img class="vector-icon" alt="" src="static/public/vector.svg" />
+
+            <img class="vector-icon1" alt="" src="static/public/vector1.svg" />
+          </button>
+          <div class="rating">4,8 Rating</div>
+        </div>
+        <div class="shopping-bag-1-detail-menu-parent">
+          <button class="shopping-bag-1-detail-menu">
+            <img class="group-icon" alt="" src="static/public/group.svg" />
+
+            <img class="group-icon1" alt="" src="static/public/group1.svg" />
+          </button>
+          <div class="rating">2000+ Order</div>
+        </div>
+      </div>
+      <div class="shoes-detail-menu">
+        <p class="this-product-recycle">This product recycle by</p>
+        <p class="this-product-recycle">some product</p>
+      </div>
+      <button class="buy" id="buy">
+        <div class="create-account1">BUY</div>
+      </button>
+      <div class="buy-detail-menu">BUY</div>
+    </main>
+  </body>
+  <script>
+    var buy = document.getElementById("buy");
+    if (buy) {
+      buy.addEventListener("click", function (e) {
+        window.location.href = "./order";
+      });
+    }
+  </script>
+</html>
