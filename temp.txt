@@ -1,0 +1,5 @@
+ <!-- <img id="video"
+        class="scanner-scanner-icon"
+        alt=""
+        src="{{url_for('video')}}"
+      /> -->
